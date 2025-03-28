@@ -46,8 +46,6 @@ manager/music/bus="Music"
 Log="*res://addons/logger/logger.gd"
 LogWrapper="*res://autoload/wrapper/log_wrapper/log_wrapper.tscn"
 TranslationServerWrapper="*res://autoload/wrapper/translation_server_wrapper/translation_server_wrapper.tscn"
-SceneManager="*res://addons/scene_manager/scene_manager.tscn"
-Scenes="*res://addons/scene_manager/scenes.gd"
 SceneManagerWrapper="*res://autoload/wrapper/scene_manager_wrapper/scene_manager_wrapper.tscn"
 AudioManagerWrapper="*res://autoload/wrapper/audio_manager_wrapper/audio_manager_wrapper.tscn"
 SoundManager="*res://addons/resonate/sound_manager/sound_manager.gd"
@@ -58,6 +56,8 @@ Overlay="*res://autoload/overlay/overlay.tscn"
 Configuration="*res://autoload/configuration/configuration.tscn"
 AssetReference="*res://autoload/reference/asset_reference/asset_reference.tscn"
 ResourceReference="*res://autoload/reference/resource_reference/resource_reference.tscn"
+SceneManager="*res://addons/scene_manager/scene_manager.tscn"
+Scenes="*res://addons/scene_manager/scenes.gd"
 
 [debug]
 

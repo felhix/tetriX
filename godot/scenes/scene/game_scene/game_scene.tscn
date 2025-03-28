@@ -1,16 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://bsw2rarqmetlk"]
+[gd_scene load_steps=7 format=3 uid="uid://bsw2rarqmetlk"]
 
 [ext_resource type="Script" uid="uid://pb8d02y6cl72" path="res://scenes/scene/game_scene/game_scene.gd" id="1_cc2ll"]
 [ext_resource type="PackedScene" uid="uid://d1qehwioaldlb" path="res://scenes/scene/game_scene/game_content/game_content.tscn" id="3_33wd1"]
 [ext_resource type="PackedScene" uid="uid://bo52utxeld0r0" path="res://scenes/scene/game_scene/pause_menu/pause_menu.tscn" id="4_bipq8"]
 [ext_resource type="PackedScene" uid="uid://cvaa73qxuiw6n" path="res://scenes/component/builder/ui_builder/ui_builder.tscn" id="5_4r42l"]
 [ext_resource type="PackedScene" uid="uid://bea1npdsg7ii1" path="res://scenes/scene/menu_scene/options_menu/options_menu.tscn" id="5_4rg8g"]
+[ext_resource type="PackedScene" uid="uid://bm7mq6navjkty" path="res://scenes/scene/game_scene/tetrix_game/tetrix_game.tscn" id="6_rkekw"]
 
 [node name="GameScene" type="Node"]
 process_mode = 3
 script = ExtResource("1_cc2ll")
 
+[node name="TetrixGame" parent="." instance=ExtResource("6_rkekw")]
+position = Vector2(351, 131)
+
 [node name="GameContent" parent="." instance=ExtResource("3_33wd1")]
+visible = false
 
 [node name="PauseMenu" parent="." instance=ExtResource("4_bipq8")]
 unique_name_in_owner = true
