@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://crvdmtowmw2sc"]
 
 [ext_resource type="Material" uid="uid://djfj1oxf2lsrm" path="res://resources/preload/particle_process_material/tres/game_button.tres" id="1_iokbb"]
-[ext_resource type="Script" path="res://scenes/component/emitter/particle_emitter/label_particle_emitter/label_particle_emitter.gd" id="2_31wt5"]
+[ext_resource type="Script" uid="uid://b50y4tr7q6nnt" path="res://scenes/component/emitter/particle_emitter/label_particle_emitter/label_particle_emitter.gd" id="2_31wt5"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_54e2o"]
 viewport_path = NodePath("SubViewport")

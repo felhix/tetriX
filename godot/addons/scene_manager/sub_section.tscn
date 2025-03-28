@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://b4edho3whn67t"]
 
-[ext_resource type="Script" path="res://addons/scene_manager/sub_section.gd" id="1_kgwwp"]
-[ext_resource type="Texture2D" uid="uid://ducsapedmhpmq" path="res://addons/scene_manager/icons/GuiOptionArrowRight.png" id="1_yyg5g"]
-[ext_resource type="Script" path="res://addons/scene_manager/sub_section_button.gd" id="3_smgrs"]
-[ext_resource type="Texture2D" uid="uid://cysotw4lt7cyj" path="res://addons/scene_manager/icons/ImportFail.svg" id="4_chjuj"]
+[ext_resource type="Script" uid="uid://b1e2u5cwmbo1q" path="res://addons/scene_manager/sub_section.gd" id="1_kgwwp"]
+[ext_resource type="Texture2D" uid="uid://cvl0bsj6nq6ab" path="res://addons/scene_manager/icons/GuiOptionArrowRight.png" id="1_yyg5g"]
+[ext_resource type="Script" uid="uid://bp870kkin3v5x" path="res://addons/scene_manager/sub_section_button.gd" id="3_smgrs"]
+[ext_resource type="Texture2D" uid="uid://cxdbgwwjfvhad" path="res://addons/scene_manager/icons/ImportFail.svg" id="4_chjuj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uvnds"]
 content_margin_left = 5.0
