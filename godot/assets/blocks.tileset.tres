@@ -1,0 +1,18 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://dqopvdgpx1ody"]
+
+[ext_resource type="Texture2D" uid="uid://b2yo5xtec885x" path="res://assets/tetris tileset-export.png" id="1_hosvr"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v5tiu"]
+resource_name = "Tetris tileset"
+texture = ExtResource("1_hosvr")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+
+[resource]
+sources/1 = SubResource("TileSetAtlasSource_v5tiu")

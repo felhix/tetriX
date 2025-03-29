@@ -242,9 +242,3 @@ func check_game_over():
 			land_piece()
 			$HUD.get_node("GameOverLabel").show()
 			game_running = false
-
-
-
-
-
-

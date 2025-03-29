@@ -1,7 +1,6 @@
 extends CharacterBody2D
 
 @onready var  ray_cast_2d = $RayCast2D
-@onready var tile_map = $"../TileMap"
 
 var currentPos = [-448,-470]
 var targetPos = Vector2i(0, 0)
