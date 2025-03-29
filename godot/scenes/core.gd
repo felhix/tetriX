@@ -1,7 +1,6 @@
 extends Node2D
 
-@export var rotation_speed = PI / 6;
-@onready var camrea: Camera2D = $Camera2D;
+@export var rotation_speed = PI / 2;
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
