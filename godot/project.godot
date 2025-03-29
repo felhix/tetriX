@@ -81,11 +81,11 @@ enabled=PackedStringArray("res://addons/format_on_save/plugin.cfg", "res://addon
 [file_customization]
 
 folder_colors={
-"res://addons/": "gray",
 "res://artifacts/": "gray",
 "res://assets/": "green",
 "res://autoload/": "blue",
 "res://resources/": "teal",
+"res://ressources/": "red",
 "res://scenes/": "orange",
 "res://scripts/": "yellow",
 "res://shaders/": "red",
