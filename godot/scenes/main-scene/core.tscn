@@ -16,7 +16,7 @@ texture = ExtResource("2_c8oal")
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 
 [node name="PixelSpawner" parent="." instance=ExtResource("3_aor56")]
-position = Vector2(-469, 3)
+position = Vector2(-115, -109)
 script = ExtResource("4_dtqax")
 
 [node name="Center" type="Node2D" parent="."]
