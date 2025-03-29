@@ -15,4 +15,4 @@ texture = ExtResource("1_hosvr")
 7:0/0 = 0
 
 [resource]
-sources/1 = SubResource("TileSetAtlasSource_v5tiu")
+sources/0 = SubResource("TileSetAtlasSource_v5tiu")
