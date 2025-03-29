@@ -1,13 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://c4hq2jdft0nqf"]
+[gd_scene load_steps=5 format=3 uid="uid://c4hq2jdft0nqf"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jwl0e"]
+[ext_resource type="Script" uid="uid://d1so33lraphi5" path="res://scenes/pixels/Pixel.gd" id="1_gulny"]
 
-[node name="Pixel" type="Node2D"]
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_gulny"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_gulny"]
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b58b3"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-shape = SubResource("RectangleShape2D_jwl0e")
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_gulny")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_gulny")
+scale = Vector2(0.109375, 0.109375)
+texture = SubResource("NoiseTexture2D_gulny")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_b58b3")
 debug_color = Color(0.894118, 0.160784, 0.690196, 0.823529)

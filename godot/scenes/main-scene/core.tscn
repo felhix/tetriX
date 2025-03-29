@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://milblvije3ho"]
+[gd_scene load_steps=6 format=3 uid="uid://milblvije3ho"]
 
 [ext_resource type="Script" uid="uid://dgfjqemk0o0w0" path="res://scenes/main-scene/core.gd" id="1_hlf4f"]
 [ext_resource type="Texture2D" uid="uid://8qrx0p6ir4be" path="res://icon.svg" id="2_c8oal"]
+[ext_resource type="PackedScene" uid="uid://6ylt56it1nbq" path="res://scenes/pixels/PixelSpawner.tscn" id="3_aor56"]
+[ext_resource type="Script" uid="uid://bd6tj8ayru8b8" path="res://scenes/pixels/PixelSpawner.gd" id="4_dtqax"]
+[ext_resource type="PackedScene" uid="uid://c4hq2jdft0nqf" path="res://scenes/pixels/Pixel.tscn" id="5_dtqax"]
 
 [node name="Core" type="Node2D"]
 script = ExtResource("1_hlf4f")
@@ -12,3 +15,9 @@ script = ExtResource("1_hlf4f")
 texture = ExtResource("2_c8oal")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="PixelSpawner" parent="." instance=ExtResource("3_aor56")]
+position = Vector2(-102, 179)
+script = ExtResource("4_dtqax")
+
+[node name="CharacterBody2D2" parent="PixelSpawner" instance=ExtResource("5_dtqax")]
