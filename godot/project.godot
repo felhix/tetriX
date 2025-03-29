@@ -25,7 +25,7 @@ Log/break_on_error=false
 
 config/name="Tetris"
 config/version="0.6.0"
-run/main_scene="res://scenes/core.tscn"
+run/main_scene="res://scenes/main-scene/core.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="res://assets/image/boot_splash/png/boot_splash_2560_1440.png"
@@ -76,7 +76,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/format_on_save/plugin.cfg", "res://addons/gdLinter/plugin.cfg", "res://addons/logger/plugin.cfg", "res://addons/resources_spreadsheet_view/plugin.cfg", "res://addons/scene_manager/plugin.cfg", "res://addons/script-ide/plugin.cfg")
+enabled=PackedStringArray()
 
 [file_customization]
 
