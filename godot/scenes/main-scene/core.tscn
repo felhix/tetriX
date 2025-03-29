@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://milblvije3ho"]
+[gd_scene load_steps=4 format=4 uid="uid://milblvije3ho"]
 
 [ext_resource type="Script" uid="uid://dgfjqemk0o0w0" path="res://scenes/main-scene/core.gd" id="1_hlf4f"]
 [ext_resource type="Texture2D" uid="uid://8qrx0p6ir4be" path="res://icon.svg" id="2_c8oal"]
+[ext_resource type="TileSet" uid="uid://dqopvdgpx1ody" path="res://assets/blocks.tileset.tres" id="3_c8oal"]
 
 [node name="Core" type="Node2D"]
 script = ExtResource("1_hlf4f")
@@ -9,6 +10,9 @@ script = ExtResource("1_hlf4f")
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 texture = ExtResource("2_c8oal")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAABAAEAAQAAAAAAAAADAP3/AQABAAAAAAD5//v/AQABAAAAAAD7/wUAAQABAAAAAAAIAAYAAQABAAAAAAALABAAAQABAAAAAAD//wwAAQADAAAAAADz/xAAAQADAAAAAAD0/wUAAQADAAAAAADy//j/AQADAAAAAAD1//L/AQADAAAAAAAGAPX/AQADAAAAAAAHAPr/AQADAAAAAAD+//n/AQADAAAAAAAOAPT/AQADAAAAAAA=")
+tile_set = ExtResource("3_c8oal")
