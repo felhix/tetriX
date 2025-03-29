@@ -10,6 +10,7 @@ func _ready() -> void:
 	LogWrapper.debug(self, "Tetrixxxxxxxx ready.")
 
 func _process(delta: float) -> void:
+	pass
 	#if Input.is_action_pressed("ui_left"):
 		#steps[0] += 10
 	#elif Input.is_action_pressed("ui_right"):
@@ -20,27 +21,27 @@ func _process(delta: float) -> void:
 		#spawner.rotate_piece()
 
 
-	if not falling_block:
-		falling_block = spawner.instanciate_new_block()
-	else:
-		move_piece(Vector2i.DOWN)
+	#if not falling_block:
+		#falling_block = spawner.instanciate_new_block()
+	#else:
+		#move_piece(Vector2i.DOWN)
 
-func move_piece(dir: Vector2i):
-	if can_move(dir):
-		clear_piece()
-		cur_pos += dir
-		draw_piece(active_piece, cur_pos, piece_atlas)
-	else:
-		if dir == Vector2i.DOWN:
-			land_piece()
-			check_rows()
-			piece_type = next_piece_type
-			piece_atlas = next_piece_atlas
-			next_piece_type = pick_piece()
-			next_piece_atlas = Vector2i(shapes_full.find(next_piece_type), 0)
-			clear_panel()
-			create_piece()
-			check_game_over()
+#func move_piece(dir: Vector2i):
+	#if can_move(dir):
+		#clear_piece()
+		#cur_pos += dir
+		#draw_piece(active_piece, cur_pos, piece_atlas)
+	#else:
+		#if dir == Vector2i.DOWN:
+			#land_piece()
+			#check_rows()
+			#piece_type = next_piece_type
+			#piece_atlas = next_piece_atlas
+			#next_piece_type = pick_piece()
+			#next_piece_atlas = Vector2i(shapes_full.find(next_piece_type), 0)
+			#clear_panel()
+			#create_piece()
+			#check_game_over()
 			
 func can_move(dir: Vector2i):
 	#check if there is space to move

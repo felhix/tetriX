@@ -25,7 +25,7 @@ Log/break_on_error=false
 
 config/name="TetriX"
 config/version="0.6.0"
-run/main_scene="uid://bm7mq6navjkty"
+run/main_scene="uid://xqntvyuo85wg"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="res://assets/image/boot_splash/png/boot_splash_2560_1440.png"
