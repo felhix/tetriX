@@ -13,8 +13,12 @@ func _randomly_change_position():
 func _randomly_choose_color():
 	return
 
-func spawn_pixel():
-	print("spawn")
-	var pix:Node2D = pixel.instantiate()
-	pix.position = global_position  
+func _input(event):
+	if event is InputEventScreenTouch && event.is_pressed(): 
+		print("Tap Detected - Spawning Arrow...")
+		spawn_pixel()
+
+func spawn_pixel():	
+	var pix = pixel.instantiate() as CharacterBody2D
 	add_child(pix)
+	pix.position = global_position
